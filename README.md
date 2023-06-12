@@ -39,6 +39,7 @@ https://github.com/nefudev/sd-webui-auto-operation/assets/132149510/42621800-b7b
 - Headless (browser hidden) automation (may be slightly faster...?)
 
 Basically, you need to code according to what you want to automate
+
 Execution is also confirmed to work with commit ID: 22bcc7be428c94e9408f589966c2040187245d81.
 
 <br>
