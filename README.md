@@ -1,28 +1,24 @@
 # sd-webui-auto-operation
 
-## <span style="color: red; font-weight:bold">Attention </span>
+## **Attention**
 
----
+**This is not an extension of stable-diffusion-webui**
 
-- <span style="color: red; font-weight:bold;font-size:16px">This is not an extension of stable-diffusion-webui</span>
-
-- <span style="color: red; font-weight:bold;font-size:16px">これは stable-diffusion-webui の拡張機能ではありません。</span>
+**これは stable-diffusion-webui の拡張機能ではありません。**
 
 <br>
 
 [日本語の説明は下部に記載してあります。](#jump)
 
----
-
 <br>
 
-## About
+## **About**
 
 This is a script to assist in the automatic operation of [AUTOMATIC1111 / stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui), using the E2E testing tool [Playwright](https://playwright.dev/) and javaScript.Some knowledge of javascript is required to create an original automated process.
 
 <br>
 
-## Function
+## **Features**
 
 - The following operations are available as sample code
 
@@ -41,7 +37,7 @@ Execution is also confirmed to work with commit ID: 22bcc7be428c94e9408f589966c2
 
 <br>
 
-## Install
+## **Install**
 
 1. Installing a version control tool for node.js
 
@@ -69,11 +65,11 @@ npm i
 
 <br>
 
-## Test run (one t2i run with any parameters)
+## **Test run (one t2i run with any parameters)**
 
 This command is for those who want to try it for the time being. txt2img is executed once with the set parameters.
 
-1. Start sd-webui
+1. Start sd-webui and make sure it is ready to generate images.
 2. Execute the following command from the terminal in the sd-webui-auto-operation directory
 
 ```
@@ -86,7 +82,7 @@ It is recommended to use the [plawright extension for Visual Studio Code](https:
 
 <br>
 
-## Directory
+## **Directory**
 
 ```
 sd-webui-auto-operation/
@@ -105,13 +101,13 @@ sd-webui-auto-operation/
 - README.md
 ```
 
-## Configure parameters
+## **Configure parameters**
 
 - Parameters such as prompt and size can be set in config.ts.
 
 <br>
 
-## How to Create an Automatic Process
+## **How to Create an Automatic Process**
 
 Brief explanation!
 
@@ -123,7 +119,6 @@ Brief explanation!
 
 - To create an original auto-execution process, refer to the sample and describe it in the test method in the \*.spec.ts file.
 
-- To create the original auto-execution process, please refer to the sample and describe it in the test method in the \*.spec.ts file.
 - The methods required for t2i and i2i automation are summarized in utils.ts. Some excerpts of the functions are listed below.
   - Input prompt
   - Image generation
@@ -134,7 +129,7 @@ Brief explanation!
 
 <br>
 
-## Creating automated processes using the GUI's operation recording feature
+## **How to record UI operations**
 
 Playwright has the ability to record screen operations and create tests. By using this function, you can easily create automated processes.
 
@@ -152,9 +147,9 @@ This method is easy to create an automatic process, but it is not suitable for c
 
 <br>
 
-## Notes.
+## **Notes**
 
-- This script is based on html elements for button clicking and input. Therefore, if the elements of stable-diffusion-webui's screen change in the future, it may not work.
+- This script performs automated processing based on screen information. Therefore, it may not work if elements of the stable-diffusion-webui screen are changed in the future.
 
 <br>
 <br>
@@ -165,13 +160,13 @@ This method is easy to create an automatic process, but it is not suitable for c
 
 <br>
 
-## <a name="jump">このスクリプトについて</a>
+## **このスクリプトについて**
 
-これは[AUTOMATIC1111 / stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)の自動操作の支援スクリプトです。E2E テストツールの [Playwright](https://playwright.dev/) と javaScript を使用しています。オリジナルの自動化処理を作成するためには、javascript の知識がある程度必要です。
+これは[AUTOMATIC1111 / stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)の自動操作の支援スクリプトです。E2E テストツールの [Playwright](https://playwright.dev/) と javaScript を使用しています。オリジナルの自動化処理を作成するためには、javaScript の知識がある程度必要です。
 
 <br>
 
-## できること
+## **できること**
 
 - サンプルコードとして下記操作が可能
 
@@ -191,7 +186,7 @@ This method is easy to create an automatic process, but it is not suitable for c
 
 <br>
 
-## インストール
+## **インストール**
 
 1. node.js のバージョン管理ツールのインストール
 
@@ -221,11 +216,11 @@ npm i
 
 <br>
 
-## テスト実行 (任意のパラメーターで t2i を 1 回実行)
+## **テスト実行 (任意のパラメーターで t2i を 1 回実行)**
 
-とりあえず使って見たい人用コマンド。設定されたパラメーターで txt2img が 1 回実行されます。
+とりあえずすぐ使って見たい人用コマンド。設定されたパラメーターで txt2img が 1 回実行されます。
 
-1. sd-webui の起動
+1. sd-webui の起動し、画像生成できる状態にしておく
 2. sd-webui-auto-operation ディレクトリ内でターミナルから下記コマンドを実行
 
 ```
@@ -238,7 +233,7 @@ npm run executeT2iOnce
 
 <br>
 
-## ディレクトリ構成
+## **ディレクトリ構成**
 
 ```
 sd-webui-auto-operation/
@@ -257,13 +252,13 @@ sd-webui-auto-operation/
 - README.md
 ```
 
-## パラメーターの設定
+## **パラメーターの設定**
 
 - プロンプトやサイズとかのパラメーターの設定は config.ts で行えます。
 
 <br>
 
-## 自動処理の作成方法
+## **自動処理の作成方法**
 
 ざっくり説明！
 
@@ -282,7 +277,7 @@ sd-webui-auto-operation/
 
 <br>
 
-## GUI の操作記録機能を使用して自動処理の作成
+## **GUI の操作記録機能を使用して自動処理の作成**
 
 Playwright には画面操作を記録して、テストを作成する機能があります。その機能を利用すれば、簡単に自動処理を作成する事ができます。
 
@@ -300,6 +295,6 @@ npm run codegen http://localhost:7860/
 
 <br>
 
-## 注意点
+## **注意点**
 
 - このスクリプトは html の要素を元にボタンのクリックや入力を行っています。その為、今後 stable-diffusion-webui の画面の要素に変化があれば機能しなくなる事があります。
