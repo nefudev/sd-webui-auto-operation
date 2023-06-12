@@ -16,7 +16,13 @@
 
 This is a script to assist in the automatic operation of [AUTOMATIC1111 / stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui), using the E2E testing tool [Playwright](https://playwright.dev/) and javaScript.Some knowledge of javascript is required to create an original automated process.
 
+https://github.com/nefudev/sd-webui-auto-operation/assets/132149510/42621800-b7bb-4bc4-a95b-95a9a1d48bb3
+
+**This video shows i2i being performed on all images output by t2i.(2X speed)**
+
+
 <br>
+
 
 ## **Features**
 
